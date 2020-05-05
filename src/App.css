@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+/*Import*/
+@font-face {
+	font-family: 'display';
+	src: url('./fonts/fallout_display.ttf') format('opentype');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'decayed';
+	src: url('./fonts/fallout_decayed.ttf') format('opentype');
+	font-style: normal;
+	font-weight: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*Variables*/
+:root {
+	--fDisplay: 'display';
+	--fDecayed: 'decayed';
+	--cBrownText: #907824;
+	--cBrownBack: #302820;
+	--cGreenActive: #3cf800;
+	--cGreenInactive: #183018;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*Main*/
+html, body {
+	background: black;
+	font-family: var(--fDisplay);
+	color: var(--cGreenActive);
+	font-size: 16px;
+}
+#root {
+	max-width: 1200px;
+	margin: auto;
+}
+header {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	padding: 10px 0;
+	margin: 0 10px;
+	border-bottom: 2px solid var(--cBrownText);
+	font-family: var(--fDecayed);
+}
+h1 {
+	font-size: 4rem;
+	text-transform: uppercase;
+}
+button {
+	font-family: var(--fDecayed);
+	text-transform: uppercase;
+	font-size: 2rem;
+	color: var(--cBrownText);
+	background: var(--cBrownBack);
+	border: 2px solid var(--cBrownText);
+	border-radius: 5px;
+	padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*Modules*/
+/*Language*/
+.m-language {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
 }
-
-.App-link {
-  color: #61dafb;
+.m-language > button {
+	margin: auto;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.m-language > button:nth-child(1) {
+	grid-column: 2/3;
+}
+.m-language > button:nth-child(2) {
+	grid-column: 3/4;
 }
