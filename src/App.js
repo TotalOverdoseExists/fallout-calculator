@@ -20,6 +20,9 @@ class App extends React.Component {
 					<LanguageSelect lang='ru' />
 				</div>
 			</header>
+			<main>
+				
+			</main>
 		)
 	}
 }
