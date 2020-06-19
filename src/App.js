@@ -6,12 +6,17 @@ class App extends React.Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-			lang: '',
+			lang: 'en',
 			name: 'Name',
 			age: 18,
 			sex: 'Male',
 			race: 'Human'
 		}
+		this.langChange.bind(this)
+	}
+
+	langChange() {
+		/*this.setState(lang = this.props.lang)*/
 	}
 
 	render() {
@@ -20,8 +25,8 @@ class App extends React.Component {
 				<header>
 					<h1>Fallout Calculator</h1>
 					<div className='m-language'>
-						<button>{this.state.lang = 'en'}</button>
-						<button>{this.state.lang = 'ru'}</button>
+						<button onClick={this.langChange}>{this.props.lang[0]}</button>
+						<button onClick={this.langChange}>{this.props.lang[1]}</button>
 					</div>
 				</header>
 				<main>
@@ -30,7 +35,7 @@ class App extends React.Component {
 							{this.state.name}
 						</button>
 						<button>
-							{this.state.age}
+							Age {this.state.age}
 						</button>
 						<button>
 							{this.state.sex}
@@ -39,7 +44,12 @@ class App extends React.Component {
 							{this.state.race}
 						</button>
 					</div>
-					<div className='m-characteristics'></div>
+					<div className='m-characteristics'>
+						<div className='m-special'></div>
+						<div className='m-specialPoints'></div>
+						<div className='m-status'></div>
+						<div className='m-details'></div>
+					</div>
 					<div className='m-traits'></div>
 					<div className='m-skills'></div>
 					<div className='m-view'></div>
