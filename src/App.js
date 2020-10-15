@@ -30,7 +30,7 @@ class App extends React.Component {
 					</div>
 				</header>
 				<main>
-					{/*<div className='m-person'>
+					<div className='m-person'>
 						<button>
 							{this.state.name}
 						</button>
@@ -98,95 +98,7 @@ class App extends React.Component {
 						<h2>Optional traits</h2>
 					</div>
 					<div className='m-skills'></div>
-					<div className='m-view'></div>*/}
-					<div style={{float:'left',width:'50%'}}>
-						<div style={{float:'left',width:'100%'}}>
-							<button style={{width:'25%'}}>NAME</button>
-							<button style={{width:'25%'}}>AGE</button>
-							<button style={{width:'25%'}}>SEX</button>
-							<button style={{width:'25%'}}>RACE</button>
-						</div>
-						<div style={{float:'left',width:'50%'}}>
-							<span style={{display:'block'}}>ST - <input style={{width:'50%'}} type="number" value="5"/></span>
-							<span style={{display:'block'}}>PE - <input style={{width:'50%'}} type="number" value="5"/></span>
-							<span style={{display:'block'}}>EN - <input style={{width:'50%'}} type="number" value="5"/></span>
-							<span style={{display:'block'}}>CH - <input style={{width:'50%'}} type="number" value="5"/></span>
-							<span style={{display:'block'}}>IN - <input style={{width:'50%'}} type="number" value="5"/></span>
-							<span style={{display:'block'}}>AG - <input style={{width:'50%'}} type="number" value="5"/></span>
-							<span style={{display:'block'}}>LK - <input style={{width:'50%'}} type="number" value="5"/></span>
-							<div style={{float:'left',width:'100%'}}>
-								<span>CHAR POINTS <input style={{width:'20%'}} type="text" value="5"/></span>
-							</div>
-						</div>
-						<div style={{float:'left',width:'50%'}}>
-							<span style={{display:'block'}}>Hit points 33/33</span>
-							<span style={{display:'block'}}>Poisoned</span>
-							<span style={{display:'block'}}>Radiated</span>
-							<span style={{display:'block'}}>Eye damage</span>
-							<span style={{display:'block'}}>Crippled Right Arm</span>
-							<span style={{display:'block'}}>Crippled Left Arm</span>
-							<span style={{display:'block'}}>Crippled Right Leg</span>
-							<span style={{display:'block'}}>Crippled Left Leg</span>
-						</div>
-						<div style={{float:'left',width:'50%'}}>
-							<span style={{display:'block'}}>Armor Class 6</span>
-							<span style={{display:'block'}}>Action Points 8</span>
-							<span style={{display:'block'}}>Carry Weight 175</span>
-							<span style={{display:'block'}}>Melee Damage 1</span>
-							<span style={{display:'block'}}>Damage Res. 0%</span>
-							<span style={{display:'block'}}>Poison Res. 30%</span>
-							<span style={{display:'block'}}>Radiation Res. 12%</span>
-							<span style={{display:'block'}}>Sequence 12</span>
-							<span style={{display:'block'}}>Healing Rate 2</span>
-							<span style={{display:'block'}}>Critical Chance 6%</span>
-						</div>
-						<div style={{float:'left',width:'100%'}}>
-							<h2>OPTIONAL TRAITS</h2>
-							<div style={{float:'left',width:'50%'}}>
-								<span style={{display:'block'}}><input type="checkbox" checked/>Fast Metabolism</span>
-								<span style={{display:'block'}}><input type="checkbox" checked/>Fast Metabolism</span>
-								<span style={{display:'block'}}><input type="checkbox" checked/>Fast Metabolism</span>
-								<span style={{display:'block'}}><input type="checkbox" checked/>Fast Metabolism</span>
-								<span style={{display:'block'}}><input type="checkbox" checked/>Fast Metabolism</span>
-								<span style={{display:'block'}}><input type="checkbox" checked/>Fast Metabolism</span>
-								<span style={{display:'block'}}><input type="checkbox" checked/>Fast Metabolism</span>
-								<span style={{display:'block'}}><input type="checkbox" checked/>Fast Metabolism</span>
-							</div>
-							<div style={{float:'left',width:'50%',textAlign:'right'}}>
-								<span style={{display:'block'}}>Fast Metabolism<input type="checkbox" checked/></span>
-								<span style={{display:'block'}}>Fast Metabolism<input type="checkbox" checked/></span>
-								<span style={{display:'block'}}>Fast Metabolism<input type="checkbox" checked/></span>
-								<span style={{display:'block'}}>Fast Metabolism<input type="checkbox" checked/></span>
-								<span style={{display:'block'}}>Fast Metabolism<input type="checkbox" checked/></span>
-								<span style={{display:'block'}}>Fast Metabolism<input type="checkbox" checked/></span>
-								<span style={{display:'block'}}>Fast Metabolism<input type="checkbox" checked/></span>
-								<span style={{display:'block'}}>Fast Metabolism<input type="checkbox" checked/></span>
-							</div>
-						</div>
-					</div>
-					<div style={{float:'right',width:'50%'}}>
-						<h2>SKILLS</h2>
-						<span style={{display:'block'}}><input type="checkbox" checked/>Small Guns</span>
-						<span style={{display:'block'}}><input type="checkbox" checked/>Small Guns</span>
-						<span style={{display:'block'}}><input type="checkbox" checked/>Small Guns</span>
-						<span style={{display:'block'}}><input type="checkbox" checked/>Small Guns</span>
-						<span style={{display:'block'}}><input type="checkbox" checked/>Small Guns</span>
-						<span style={{display:'block'}}><input type="checkbox" checked/>Small Guns</span>
-						<span style={{display:'block'}}><input type="checkbox" checked/>Small Guns</span>
-						<span style={{display:'block'}}><input type="checkbox" checked/>Small Guns</span>
-						<span style={{display:'block'}}><input type="checkbox" checked/>Small Guns</span>
-						<span style={{display:'block'}}><input type="checkbox" checked/>Small Guns</span>
-						<span style={{display:'block'}}><input type="checkbox" checked/>Small Guns</span>
-						<span style={{display:'block'}}><input type="checkbox" checked/>Small Guns</span>
-						<span style={{display:'block'}}><input type="checkbox" checked/>Small Guns</span>
-						<span style={{display:'block'}}><input type="checkbox" checked/>Small Guns</span>
-						<span style={{display:'block'}}><input type="checkbox" checked/>Small Guns</span>
-						<span style={{display:'block'}}><input type="checkbox" checked/>Small Guns</span>
-						<span style={{display:'block'}}><input type="checkbox" checked/>Small Guns</span>
-						<span style={{display:'block'}}><input type="checkbox" checked/>Small Guns</span>
-						<span style={{display:'block'}}><input type="checkbox" checked/>Small Guns</span>
-						<span style={{display:'block'}}><input type="checkbox" checked/>Small Guns</span>
-					</div>
+					<div className='m-view'></div>
 				</main>
 			</section>
 		)
